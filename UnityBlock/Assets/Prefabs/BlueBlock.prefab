@@ -10,6 +10,9 @@ GameObject:
   - 4: {fileID: 434898}
   - 212: {fileID: 21283548}
   - 95: {fileID: 9541336}
+  - 50: {fileID: 5022748}
+  - 114: {fileID: 11483678}
+  - 114: {fileID: 11465544}
   m_Layer: 0
   m_Name: BlueBlock
   m_TagString: Untagged
@@ -29,6 +32,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5022748
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142478}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!95 &9541336
 Animator:
   serializedVersion: 3
@@ -46,6 +66,32 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11465544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc14bef904de43dab2f8c4284aa5f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Block: {fileID: 142478}
+  WaitTime: 3000
+--- !u!114 &11483678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc14bef904de43dab2f8c4284aa5f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Block: {fileID: 0}
+  WaitTime: 0
 --- !u!212 &21283548
 SpriteRenderer:
   m_ObjectHideFlags: 1

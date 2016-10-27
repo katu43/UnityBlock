@@ -11,7 +11,6 @@ public class MouseTouch : MonoBehaviour {
 	void PrintClickPos(){
 		if (Input.GetMouseButtonDown (0)) {
 			Vector2 tapPoint = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			Debug.Log ("X: " + tapPoint.x + " Y: " + tapPoint.y);
 		}
 	}
 
