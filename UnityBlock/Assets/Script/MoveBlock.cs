@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MoveBlock : MonoBehaviour {
 
+	[SerializeField]
 	public  GameObject Block;
 	public  float WaitTime;
 	private Vector3 Position;
@@ -21,7 +22,7 @@ public class MoveBlock : MonoBehaviour {
 	private IEnumerator BlockInstante(){
 
 		while (true) {
-			yield return new WaitForSeconds (3f);
+			yield return new WaitForSeconds (2f);
 			Instantiate (Block, Position, transform.rotation);
 		}
 	}

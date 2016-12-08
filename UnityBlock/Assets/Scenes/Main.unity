@@ -182,7 +182,8 @@ Prefab:
       propertyPath: m_GravityScale
       value: 0.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11483678, guid: 89e7169dc27464d80a39a97479a7938a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 89e7169dc27464d80a39a97479a7938a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1137331912
@@ -367,7 +368,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6176368, guid: e69b2ae792294429197d9cba2006a102, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5031214, guid: e69b2ae792294429197d9cba2006a102, type: 2}
       propertyPath: m_IsKinematic
